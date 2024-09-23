@@ -1,0 +1,157 @@
+/* UNIVERSAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #4aa0dd;
+  color: white;
+  z-index: -100;
+}
+
+a {
+  color: #0d0505;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.bg-color {
+  background-color: #2279be;
+}
+
+.flex-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-column {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.flex-row h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 0.7rem;
+}
+
+.smallest-heading {
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.social-links {
+  align-self: center;
+}
+
+.icons {
+  font-size: 0.6rem;
+  text-align: center;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.25rem;
+  background-color: #555;
+  transition: ease-in 225ms;
+}
+
+.icons:hover {
+  background-color: white;
+  color: #2279be;
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+.details {
+  margin: 0 0 0.8rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  opacity: 0.8;
+}
+
+.line {
+  width: 18rem;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  gap: 1.5rem;
+  line-height: 1.5rem;
+  padding: 1.25rem;
+  color: white;
+  background-color: #5ca9dd;
+  /* color: #2279be;
+  background-color: white;
+  border: 2.5px groove #2279be;
+  outline: 2.5px solid white; */
+  border-radius: 1rem;
+}
+
+.wrapper-icons {
+  font-size: 2rem;
+}
+
+.grid-row {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form {
+  margin-left: 26%;
+  padding: 1rem;
+}
+
+.footer {
+  display: flex;
+  background-color: #333;
+  gap: 4rem;
+  padding: 2.5rem 1rem;
+}
+
+.footer-column{
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  width: 90%;
+  line-height: 1.5rem;
+}
+
+.footer-column:nth-child(1) {
+  margin:0 8%;
+}
+
+.footer-icons {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: .25rem;
+  color: white;
+  border-radius: 0.25rem;
+  transition: ease-in 225ms;
+}
+
+.footer {
+  height: 70vh;
+  position: absolute;
+  z-index: 10;
+}
+
+.unordered-list {
+  margin-bottom: .75rem;
+}

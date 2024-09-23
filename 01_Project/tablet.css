@@ -1,0 +1,114 @@
+@media (max-width: 1200px) {
+  .hero .icons {
+    display: none;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .footer-list {
+    margin-right: 0px;
+  }
+
+  .flex-row .flex-column h1 {
+    font-size: 1.5rem;
+  }
+
+  .flex-row .content-column p {
+    font-size: 1.25rem;
+  }
+
+  .flex-row {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .main-image {
+    aspect-ratio: 1/1;
+  }
+}
+
+@media (max-width: 880px) {
+  .footer-row {
+    display: block;
+    padding: 2rem 2.5rem 0;
+  }
+
+  .footer-column {
+    margin-top: 3.5rem;
+    gap: 1rem;
+  }
+
+  .footer-nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .get-started {
+    padding: 10rem 3rem 12rem;
+  }
+
+  .post {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.75rem;
+  }
+
+  .post header {
+    font: bold;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .posts-head:not(.top) {
+    margin-top: 2.25rem;
+  }
+
+  .bars {
+    display: block;
+    float: right;
+    margin: 1rem 1.5rem 0;
+    font-size: 2.5rem;
+  }
+
+  .nav-bar {
+    display: block;
+  }
+
+  .content {
+    z-index: -1;
+  }
+
+  .nav-bar ul {
+    padding-top: 1.25rem;
+    display: none;
+  }
+
+  .nav-bar ul li {
+    font-size: 5.5rem;
+    font-weight: bolder;
+    padding: 0rem 0 1.75rem;
+    text-align: center;
+    border-radius: 2rem;
+    opacity: 1;
+  }
+
+  .nav-bar ul li:hover {
+    background-color: #666;
+  }
+
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+    height: 58vh;
+    padding: 2rem;
+    display: block;
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+    background-color: #fbfbfb;
+    width: 100%;
+    z-index: 10;
+  }
+}

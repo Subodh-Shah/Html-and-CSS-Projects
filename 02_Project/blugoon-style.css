@@ -1,0 +1,297 @@
+/* LEFT-PART */
+
+.left-section {
+  height: 100vh;
+  color: white;
+  width: 20%;
+  margin-left: 2rem;
+  position: fixed;  
+}
+
+.first-image {
+  width: 5.5rem;
+  border-radius: 1rem;
+  aspect-ratio: 1/0.9;
+  margin: 1rem 0 0.5rem;
+}
+
+.left-top {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  line-height: 1rem;
+}
+
+.left-last-head {
+  font-size: 0.67rem;
+  line-height: .87rem;
+  text-align: center;
+  font-weight: lighter;
+  opacity: .87;
+}
+
+.left-section ul {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.left-section li {
+  padding: 0.75rem 0 0.75rem;
+  font-size: 0.85rem;
+  border-top: 0.5px dotted white;
+  border-bottom: 0.5px dotted white;
+  text-align: center;
+}
+
+.left-section li a {
+  color: white;
+}
+
+.left-section li:nth-child(1) {
+  background-color: #4aa0dd;
+}
+
+.left-section .active {
+  color: rgb(255, 4, 4);
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+ul li a.active {
+  background-color: black;
+}
+
+/* .inactive {
+  padding: 0.75rem 6.45rem;
+}
+
+.inactive:hover {
+  background-color: white;
+  color: #2279be;
+} */
+
+ul li {
+  /* list-style: none;
+  display: inline;
+  margin-right: 10px; */
+  display: grid;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+ul li a:hover {
+  background-color: black;
+  color: rgb(255, 4, 4);
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+
+/* RIGHT-PART */
+
+.right-column {
+  width: 80%; 
+  margin-left: 25%;
+  padding: 0 .5rem;
+}
+
+
+.img-only {
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.top-right-image {
+  width: 55rem;
+  aspect-ratio: 1/0.4;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+}
+
+.right-part-heading {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.right-part-paragraph {
+  font-size: 1rem;
+  margin: 0 1rem;
+  line-height: 1.5rem;
+  opacity: 0.8;
+}
+
+.right-line {
+  width: 18rem;
+  margin: .75rem;
+}
+
+
+/* AFTER TOP SECTION */
+
+.after-top {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 25.5%;
+}
+
+.after-top-content {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.after-top-content h2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  line-height: 1.75rem;
+}
+
+.after-top-content .paragraph {
+  margin: 0.75rem 0 0.5rem ;
+}
+
+.after-top-content a {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .75rem;
+  background-color: white;
+  color: #2279be;
+  padding: 0.5rem;
+  outline: 2px solid #2279be;
+  border-radius: 0.5rem;
+  transition: ease-in 300ms;
+}
+
+.after-top-content a:hover {
+  background-color: #2279be;
+  color: white;
+  outline: 2px solid white;
+  font-weight: bolder;
+}
+.pond-image {
+  width: 30rem;
+  padding: 1.75rem;
+  border-radius: 2.5rem;
+  aspect-ratio: 1/0.67;
+}
+
+
+/* FEATURES */
+
+.feature-part{
+  margin-left: 26%;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.features {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.feature-part hr {
+  margin: 1rem 0;
+}
+
+
+/* GALLERY */
+
+.gallery {
+  margin-left: 26%;
+  padding:2.5rem 1rem 3.5rem;
+}
+
+.gallery .line {
+  margin: 1rem 0;
+}
+
+.grid-row img {
+  width: 15rem;
+  border-radius: .5rem;
+}
+
+.grid-row img:nth-child(1),
+.grid-row img:nth-child(3),
+.grid-row img:nth-child(4) {
+  grid-column: span 1;
+  grid-row: span 2;
+  height: 15rem;
+}
+
+/* FORM */
+
+.form .line{
+  margin: 1rem 0;
+}
+
+.name-email input{
+  margin-top: .75rem;
+  width: 46.65%;
+  background-color: white;
+  padding: .7rem;
+  height: 2.25rem;
+  border: 1.25px groove black;
+  outline: 1.5px solid white;
+}
+
+.subject-input {
+  margin-top: 1.5rem;
+  background-color: white;
+  padding: .7rem;
+  height: 2.25rem;
+  border: 1.25px groove black;
+  outline: 1.5px solid white;
+  width: 95%;
+}
+
+.comment {
+  margin-top: 1.5rem;
+  background-color: white;
+  padding: .75rem;
+  height: 2rem;
+  border: 1.25px groove black;
+  outline: 1.5px solid white;
+  width: 95%;
+  height: 12rem;
+}
+
+.submit-button {
+  margin: .75rem 0 1.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .75rem;
+  background-color: white;
+  color: #2279be;
+  padding: 0.5rem;
+  outline: 2px solid #2279be;
+  border-radius: 0.5rem;
+  transition: ease-in 300ms;
+  margin-left:56%;
+}
+
+.submit-button:hover {
+  background-color: #2279be;
+  color: white;
+  outline: 2px solid white;
+  font-weight: bolder;
+}
+
+/* FOOTER */
+
+.footer-copyright {
+  text-transform: lowercase;
+}
+
+.footer a {
+  color: white;
+}
+

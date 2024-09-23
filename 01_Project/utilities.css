@@ -1,0 +1,88 @@
+.secondary-color {
+  color: red;
+}
+
+.bg-color {
+  background-color: #fbfbfb;
+}
+
+.social-media {
+  align-self: center;
+}
+
+.icons {
+  gap: 3rem;
+  padding: 1rem 0.75rem;
+  font-size: 1.5rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.bars{
+  display: none;
+}
+
+.twitter:hover {
+  color: aqua;
+}
+
+.youtube:hover {
+  color: red;
+}
+
+.facebook:hover {
+  color: blue;
+}
+
+.quality-icons {
+  font-size: 4rem;
+  padding: 2rem;
+  border-radius: 100%;
+}
+
+.quality-icons:hover {
+  color: #fff;
+  background-image: linear-gradient(to left, #ccc, #000);
+}
+
+.grid-row {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 3rem;
+  padding: 7rem 5em 5rem;
+}
+
+.grid-column {
+  padding: 0 0.75rem;
+}
+
+.small-content {
+  opacity: 0.5;
+}
+
+.flex-row {
+  display: flex;
+  gap: 5rem;
+}
+
+.flex-column {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-image {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/0.75;
+  border-radius: 1rem;
+}
+
+.small-profile-image {
+  width: 5rem;
+}
