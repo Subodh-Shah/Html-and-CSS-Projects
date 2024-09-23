@@ -1,0 +1,266 @@
+.left-nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.ham-bar {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 1.25rem;
+}
+
+.logo {
+  display: flex;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+.search-row {
+  position: sticky;
+  top: 0;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  padding: 1rem;
+  height: auto;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 37rem;
+  height: 35px;
+  align-content: stretch;
+}
+
+.search-container:focus-within {
+  border: 1.5px solid;
+}
+
+.search-bar {
+  font-size: 1rem;
+  font-weight: normal;
+  border: none;
+  padding: 5px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+}
+
+.search-bar:focus {
+  box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+.search-btn {
+  padding: 3px;
+  outline: none;
+  border: none;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  width: 8%;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.speaker-btn {
+  text-align: center;
+  width: 27px;
+  padding: 7px 5px;
+  outline: none;
+  border: none;
+  width: 8%;
+  border-radius: 100%;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.search-btn:active,
+.speaker-btn:active {
+  background-color: white;
+}
+
+.login-btn {
+  font-size: 13px;
+  font-weight: bold;
+  color: blue;
+  background-color: white;
+  text-align: center;
+  padding: 7px 5px;
+  border: 1.5px solid black;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: ease 200ms;
+}
+
+.main-section {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  z-index: -20;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 8px;
+  /* margin-top: 10px; */
+  margin-right: 1rem;
+  position: fixed;
+}
+
+.sidebar-menu > ul li {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sidebar-menu > ul li:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-menu ul > * {
+  font-size: 18px;
+}
+
+.sidebar-menu ul h6 a {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  font-weight: 375;
+}
+
+.right-section {
+  margin-left: 7rem;
+  position: relative;
+  z-index: -10;
+}
+
+.btn-capsule {
+  position: fixed;
+  padding: 10px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 8px;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.btn-capsule::-webkit-scrollbar {
+  height: 1.5rem;
+}
+
+.btn-capsule > button {
+  padding: 10px 12px;
+  border-radius: 8px 10px;
+  font-size: 15px;
+  background-color: #eee;
+  border-radius: 10px;
+  background-color: #e5e5e5;
+  /* margin-right: 8px; */
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-style: normal;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-capsule > button:first-child {
+  background-color: black;
+  color: white;
+}
+
+.videos-section {
+  margin-top: 5rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  position: relative;
+  z-index: -10;
+}
+
+.card {
+  width: 300px;
+  color: white;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5%;
+  height: 200px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.duration {
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.card-content-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-content {
+  background-color: white;
+  color: #000;
+  display: flex;
+  padding: 8px 1rem;
+}
+
+.content-image {
+  border-radius: 100%;
+  width: 50px;
+  height: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 1rem;
+}
+
+.content h1 {
+  font-size: 1.25rem;
+}
+
+.content p {
+  font-size: 12px;
+}
+
+.three-dots {
+  width: 10%;
+  color: black;
+}
+
+.three-dots p {
+  cursor: pointer;
+}

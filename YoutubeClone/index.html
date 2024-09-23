@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="./images/download (1).png"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilities.css" />
+  </head>
+
+  <body>
+    <!-- nav-bar starts here -->
+    <nav class="flex-row">
+      <div class="left-nav">
+        <div><i class="fas fa-bars ham-bar"></i></div>
+        <div class="logo">
+          <a title="youtube-link" href="" class="main-logo"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <h1>Youtube</h1>
+          <sup>NP</sup>
+        </div>
+      </div>
+      <div class="search-row">
+        <div class="search-container">
+          <input type="text" placeholder="Search" class="search-bar" />
+          <button title="search-btn" type="button" class="search-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M17.5 17.5L22 22"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="speaker-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            color="#000000"
+            fill="none"
+          >
+            <path
+              d="M17 7V11C17 13.7614 14.7614 16 12 16C9.23858 16 7 13.7614 7 11V7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+            <path
+              d="M20 11C20 15.4183 16.4183 19 12 19M12 19C7.58172 19 4 15.4183 4 11M12 19V22M12 22H15M12 22H9"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <button type="button" class="login-btn">
+        <i class="fas fa-user"></i>
+        Sign in
+      </button>
+    </nav>
+    <!-- nav-bar ends here -->
+
+    <!-- sidebar starts here -->
+    <div class="main-section">
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <i class="fas fa-home"></i>
+            <h6>
+              <a href="#"><small>Home</small></a>
+            </h6>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="30"
+              height="27"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M14.4531 12.8948C14.3016 13.5215 13.5857 13.9644 12.1539 14.8502C10.7697 15.7064 10.0777 16.1346 9.51993 15.9625C9.28934 15.8913 9.07925 15.7562 8.90982 15.57C8.5 15.1198 8.5 14.2465 8.5 12.5C8.5 10.7535 8.5 9.88018 8.90982 9.42995C9.07925 9.24381 9.28934 9.10868 9.51993 9.03753C10.0777 8.86544 10.7697 9.29357 12.1539 10.1498C13.5857 11.0356 14.3016 11.4785 14.4531 12.1052C14.5156 12.3639 14.5156 12.6361 14.4531 12.8948Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20.9977 11C21 11.4701 21 11.9693 21 12.5C21 16.9783 21 19.2175 19.6088 20.6088C18.2175 22 15.9783 22 11.5 22C7.02166 22 4.78249 22 3.39124 20.6088C2 19.2175 2 16.9783 2 12.5C2 8.02166 2 5.78249 3.39124 4.39124C4.78249 3 7.02166 3 11.5 3C12.0307 3 12.5299 3 13 3.00231"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M18.5 2L18.7579 2.69703C19.0961 3.61102 19.2652 4.06802 19.5986 4.40139C19.932 4.73477 20.389 4.90387 21.303 5.24208L22 5.5L21.303 5.75792C20.389 6.09613 19.932 6.26524 19.5986 6.59861C19.2652 6.93198 19.0961 7.38898 18.7579 8.30297L18.5 9L18.2421 8.30297C17.9039 7.38898 17.7348 6.93198 17.4014 6.59861C17.068 6.26524 16.611 6.09613 15.697 5.75792L15 5.5L15.697 5.24208C16.611 4.90387 17.068 4.73477 17.4014 4.40139C17.7348 4.06802 17.9039 3.61102 18.2421 2.69703L18.5 2Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h6>
+              <a href="#"><small>Shorts</small></a>
+            </h6>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="30"
+              height="28"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M16 13C16 13.8284 16.6716 14.5 17.5 14.5C18.3284 14.5 19 13.8284 19 13C19 12.1716 18.3284 11.5 17.5 11.5C16.6716 11.5 16 12.1716 16 13Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <path
+                d="M11 19H16C18.8284 19 20.2426 19 21.1213 18.1213C22 17.2426 22 15.8284 22 13V12C22 9.17157 22 7.75736 21.1213 6.87868C20.48 6.23738 19.5534 6.06413 18 6.01732M10 6H16C16.7641 6 17.425 6 18 6.01732M2 10C2 6.22876 2 5.34315 3.17157 4.17157C4.34315 3 6.22876 3 10 3H14.9827C15.9308 3 16.4049 3 16.7779 3.15749C17.2579 3.36014 17.6399 3.7421 17.8425 4.22208C18 4.5951 18 5.06917 18 6.01732"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M3.125 19.5L3.125 13.5M5 13.5V12M5 21V19.5M3.125 16.5H6.875M6.875 16.5C7.49632 16.5 8 17.0037 8 17.625V18.375C8 18.9963 7.49632 19.5 6.875 19.5H2M6.875 16.5C7.49632 16.5 8 15.9963 8 15.375V14.625C8 14.0037 7.49632 13.5 6.875 13.5H2"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h6>
+              <a href="#"><small>Subscription</small></a>
+            </h6>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="30"
+              height="28"
+              color="#000000"
+              fill="none"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <path
+                d="M7.5 17C9.8317 14.5578 14.1432 14.4428 16.5 17M14.4951 9.5C14.4951 10.8807 13.3742 12 11.9915 12C10.6089 12 9.48797 10.8807 9.48797 9.5C9.48797 8.11929 10.6089 7 11.9915 7C13.3742 7 14.4951 8.11929 14.4951 9.5Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+            <h6>
+              <a href="#"><small>You</small></a>
+            </h6>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebars ends here -->
+
+      <div class="right-section">
+        <!-- capsule starts here -->
+        <div class="btn-capsule">
+          <button type="button">All</button>
+          <button type="button">Web</button>
+          <button type="button">APIS</button>
+          <button type="button">Algorithms</button>
+          <button type="button">Gaming</button>
+          <button type="button">Study</button>
+          <button type="button">ChessBoards</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button">Lorem.</button>
+          <button type="button"></button>
+        </div>
+        <!-- capsule ends here -->
+
+        <!-- video section starts here -->
+        <div class="videos-section">
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/3_8MZZA6rDQ?si=stns-Mgj-v713AjR"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gNf_mH8dmq8?si=6bIqyQT31vSUhID0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/fivAuW0dm5I?si=q5DNw87ukXQf7N8S"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/YUqU3zgekfM?si=J67A7EGqfvhLf4Oz"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gNf_mH8dmq8?si=6bIqyQT31vSUhID0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Tc3vW3ZlSIc?si=mM517jqfICsBqtjf"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/szS7I0AngNA?si=nRiydfhoXlFWlKZB"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gNf_mH8dmq8?si=6bIqyQT31vSUhID0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Im4PuR5Ib8Y?si=8mAF3zWm_-_Pam3w"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gNf_mH8dmq8?si=6bIqyQT31vSUhID0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/QazK4JeEGVA?si=Gzza_8i4mY0InZG5"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gNf_mH8dmq8?si=6bIqyQT31vSUhID0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Yl_19rCQQB8?si=ZGOO9j3EPJRPlMjR"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gNf_mH8dmq8?si=6bIqyQT31vSUhID0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gLHqVR6VDUg?si=fV_GAlEOCj7r_fbc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="duration">11:19</div>
+            </div>
+            <div class="card-content-row">
+              <div class="card-content">
+                <img
+                  src="./images/channels4_profile.jpg"
+                  alt=""
+                  class="content-image"
+                />
+                <div class="content">
+                  <h1>Football Match</h1>
+                  <p>Sports Live</p>
+                  <p>158k views - 2 years ago</p>
+                </div>
+              </div>
+              <div class="three-dots">
+                <abbr title="Options   "><p>...</p></abbr>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- video section ends here -->
+      </div>
+    </div>
+  </body>
+</html>
